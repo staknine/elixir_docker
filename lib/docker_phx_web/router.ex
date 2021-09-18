@@ -16,6 +16,7 @@ defmodule DockerPhxWeb.Router do
   scope "/", DockerPhxWeb do
     pipe_through :browser
 
+    resources "/users", UserController
     get "/", PageController, :index
   end
 
