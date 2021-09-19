@@ -65,4 +65,4 @@ jobs:
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         KEY: ${{ secrets.SSHKEY }}
-        script: docker service update --image username/docker_phx:${{ github.sha }} docker_phx_app
+        script: docker service update --image staknine/docker_phx:${{ github.sha }} docker_phx_app
